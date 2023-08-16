@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 1900px;
+    min-height: 100vh;
+    background: #222;
+}
+
+header{
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+
+.nav{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav ul li a{
+    color: #fff;
+    font-size: 22px;
+}
+.nav .logo{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.class{
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.class i{
+    color: #fff;
+    font-size: 40px;
+}
+.class .img{
+    border-radius: 50px;
+}
+
+.container{
+    width: 1800px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#uciha{
+  
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background:#000;
+    color: #fff;
+   border-radius: 9px;
+   font-size: 25px;
+   border: 1px solid white;
+
+}
+#obito{
+   
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background:#000;
+    color: #fff;
+   border-radius: 9px;
+   font-size: 25px;
+   border: 1px solid white;
+   overflow: scroll;
+}
+#ino{
+  
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background:#000;
+    color: #fff;
+   border-radius: 9px;
+   font-size: 25px;
+   border: 1px solid white;
+}
+#hataki{
+ 
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    background:#000;
+    color: #fff;
+    border-radius: 9px;
+    font-size: 25px;
+    border: 1px solid white;  
+}
+
+.select-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turt{
+    position: relative;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    
+}
+
+
+.selector select{
+    margin-right: 10px;
+}
+.container h1{
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.container .movies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.container .movies .block {
+    width: 335px;
+    height: 250px;
+
+}
+.loc{
+    width: 335px;
+    height: 220px;
+    border: 0px solid #252424;
+    position: relative;
+    overflow: hidden;
+}
+.loc:hover::before{
+    content:url(play-button.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loc:hover{
+    transition: ease-in 300ms;
+    transform: scale(1.1);
+}
+.container .movies .block h3{
+    color: #fff;
+}
+.container .movies .block span{
+    color: #ffffff5e;
+}
+.container .movies .block img{
+   width: 335px;
+   height: 190px;
+   overflow: hidden;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.wrapper .index{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .index .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+.wrapper .index .box h4{
+    color: #fff;
+    text-align: left;
+    font-size: 22px;
+}
+.wrapper .index .box p{
+    color: #b6b5b5b7;
+}
+.wrapper .index .box img{
+    width: 150px;
+    height: 140px;
+}
+footer{
+    background-color: #222;
+    width: 100%;
+    height: 650px;
+}
+footer .svg{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 150px;
+    padding: 130px;
+}
+
+p{
+    color: hsla(0,0%,95%,.72);  
+    font-weight: bold;    
+}
+p:hover{
+    color: #fff;
+}
+h3{
+    color: #fff;
+}
+h5{ 
+    gap: 10px;
+    color: #fff;
+   font-size: 15px;
+}
+.go{
+    position: absolute;
+   
+    margin: -380px 1200px ;
+}
+.play{
+    display: flex;
+    gap: 20px;
+}
+.wer{
+    position: absolute;
+    display: grid;
+    grid-template-columns:repeat(4 , 4fr);
+    margin: 70px -50px;
+    gap: 20px
+}
